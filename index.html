@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Calculadora Científica</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="calculator-container">
+        <div class="calculator-header">
+            <h1>SUPER CALCULADORA</h1>
+            <div class="display">
+                <div class="previous-operand" id="previous-operand"></div>
+                <div class="current-operand" id="current-operand"></div>
+            </div>
+        </div>
+        
+        <div class="calculator-buttons">
+            <button class="span-2" data-action="clear">AC</button>
+            <button data-action="delete">DEL</button>
+            <button data-operation="÷">÷</button>
+            
+            <button data-number="7">7</button>
+            <button data-number="8">8</button>
+            <button data-number="9">9</button>
+            <button data-operation="×">×</button>
+            
+            <button data-number="4">4</button>
+            <button data-number="5">5</button>
+            <button data-number="6">6</button>
+            <button data-operation="-">-</button>
+            
+            <button data-number="1">1</button>
+            <button data-number="2">2</button>
+            <button data-number="3">3</button>
+            <button data-operation="+">+</button>
+            
+            <button data-number="0">0</button>
+            <button data-number=".">.</button>
+            <button class="span-2" data-action="calculate">=</button>
+            
+            <!-- Botones científicos -->
+            <button data-scientific="sin">sin</button>
+            <button data-scientific="cos">cos</button>
+            <button data-scientific="tan">tan</button>
+            <button data-scientific="√">√</button>
+            
+            <button data-scientific="log">log</button>
+            <button data-scientific="ln">ln</button>
+            <button data-scientific="^">^</button>
+            <button data-scientific="!">!</button>
+            
+            <button data-scientific="π">π</button>
+            <button data-scientific="e">e</button>
+            <button data-scientific="(">(</button>
+            <button data-scientific=")">)</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="background.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
